@@ -13,7 +13,7 @@ import com.wzc.jetpackdemo.paging2.repository.item.ByItemRepository
 class ItemKeyActivity : AppCompatActivity() {
 
     private val mItemRecyclerView: RecyclerView by lazy {
-        findViewById<RecyclerView>(R.id.item_recyclerview)
+        findViewById<RecyclerView>(R.id.recyclerview)
     }
     private var mAdapter: Paging2Adapter? = null
 

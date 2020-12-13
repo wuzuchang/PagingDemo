@@ -2,16 +2,27 @@ package com.wzc.jetpackdemo.paging2.repository.postion
 
 import androidx.paging.PositionalDataSource
 import com.wzc.jetpackdemo.paging2.bean.Cheese
+import com.wzc.jetpackdemo.paging2.loadData
+import com.wzc.jetpackdemo.paging2.log
+import com.wzc.jetpackdemo.paging2.printThreadInfo
 
-class MyPositionDataSource: PositionalDataSource<Cheese>() {
+class MyPositionDataSource : PositionalDataSource<Cheese>() {
     override fun loadInitial(params: LoadInitialParams, callback: LoadInitialCallback<Cheese>) {
+        log("loadInitial() params.requestedStartPosition=${params.requestedStartPosition}, params.requestedLoadSize=${params.requestedLoadSize}, params.pageSize=${params.pageSize}, params.placeholdersEnabled=${params.placeholdersEnabled}")
+        printThreadInfo("loadInitial()")
+        callback.onResult(
+            data = loadData(params.requestedStartPosition, params.pageSize),
+            position = 0,
+            totalCount = 400
+        )
     }
 
     override fun loadRange(params: LoadRangeParams, callback: LoadRangeCallback<Cheese>) {
-        TODO("Not yet implemented")
+        log("loadRange() params.requestedStartPosition=${params.startPosition}, params.requestedLoadSize=${params.loadSize}")
+        printThreadInfo("loadRange()")
+        callback.onResult(
+            data = loadData(params.startPosition, params.loadSize)
+        )
     }
 
-    fun loadData( ){
-
-    }
 }
