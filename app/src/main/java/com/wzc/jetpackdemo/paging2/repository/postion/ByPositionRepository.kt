@@ -1,6 +1,5 @@
 package com.wzc.jetpackdemo.paging2.repository.postion
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
 import androidx.paging.LivePagedListBuilder
