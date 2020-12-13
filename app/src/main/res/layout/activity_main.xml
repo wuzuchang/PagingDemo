@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="8dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/open_paging2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Paging2 Demo"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/open_paging3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Paging3 Demo"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/open_paging2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
