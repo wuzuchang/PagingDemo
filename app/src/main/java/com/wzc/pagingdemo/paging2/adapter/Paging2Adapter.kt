@@ -1,9 +1,9 @@
-package com.wzc.jetpackdemo.paging2.adapter
+package com.wzc.pagingdemo.paging2.adapter
 
 import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
-import com.wzc.jetpackdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.bean.Cheese
 
 class Paging2Adapter : PagedListAdapter<Cheese, BaseViewHolder>(DIff_CALLBACK) {
 

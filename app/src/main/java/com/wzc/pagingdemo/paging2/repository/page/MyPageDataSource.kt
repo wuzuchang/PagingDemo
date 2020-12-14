@@ -1,9 +1,9 @@
-package com.wzc.jetpackdemo.paging2.repository.page
+package com.wzc.pagingdemo.paging2.repository.page
 
 import androidx.paging.PageKeyedDataSource
-import com.wzc.jetpackdemo.paging2.bean.Cheese
-import com.wzc.jetpackdemo.paging2.log
-import com.wzc.jetpackdemo.paging2.printThreadInfo
+import com.wzc.pagingdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.log
+import com.wzc.pagingdemo.paging2.printThreadInfo
 
 class MyPageDataSource : PageKeyedDataSource<Int, Cheese>() {
     var pageKey: Int = 0

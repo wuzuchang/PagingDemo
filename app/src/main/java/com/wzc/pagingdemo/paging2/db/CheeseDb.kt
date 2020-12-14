@@ -1,10 +1,10 @@
-package com.wzc.jetpackdemo.paging2.db
+package com.wzc.pagingdemo.paging2.db
 
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.room.*
 import android.content.Context
-import com.wzc.jetpackdemo.paging2.bean.Cheese
-import com.wzc.jetpackdemo.paging2.ioThread
+import com.wzc.pagingdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.ioThread
 
 /**
  * Singleton database object. Note that for a real app, you should probably use a Dependency

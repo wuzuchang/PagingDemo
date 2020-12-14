@@ -1,10 +1,10 @@
-package com.wzc.jetpackdemo.paging2.repository.postion
+package com.wzc.pagingdemo.paging2.repository.postion
 
 import androidx.paging.PositionalDataSource
-import com.wzc.jetpackdemo.paging2.bean.Cheese
-import com.wzc.jetpackdemo.paging2.loadData
-import com.wzc.jetpackdemo.paging2.log
-import com.wzc.jetpackdemo.paging2.printThreadInfo
+import com.wzc.pagingdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.loadData
+import com.wzc.pagingdemo.paging2.log
+import com.wzc.pagingdemo.paging2.printThreadInfo
 
 class MyPositionDataSource : PositionalDataSource<Cheese>() {
     override fun loadInitial(params: LoadInitialParams, callback: LoadInitialCallback<Cheese>) {

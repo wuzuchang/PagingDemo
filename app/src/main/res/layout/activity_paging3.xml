@@ -8,4 +8,24 @@
     android:paddingHorizontal="8dp"
     tools:context=".paging3.Paging3Activity">
 
+    <Button
+        android:id="@+id/dbOnly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="db or network"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dbAndNetwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="db + network"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbOnly" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

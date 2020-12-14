@@ -1,16 +1,17 @@
-package com.wzc.jetpackdemo.paging2.repository.postion
+package com.wzc.pagingdemo.paging2.repository.item
 
 import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
-import com.wzc.jetpackdemo.paging2.bean.Cheese
-import com.wzc.jetpackdemo.paging2.printThreadInfo
+import com.wzc.pagingdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.printThreadInfo
 
-class ByPositionRepository {
+class ByItemRepository {
+
     private val mFactory = object : DataSource.Factory<Int, Cheese>() {
         override fun create(): DataSource<Int, Cheese> {
-            return MyPositionDataSource()
+            return MyItemDataSource()
         }
     }
 
@@ -18,7 +19,7 @@ class ByPositionRepository {
         val pagedListConfig = PagedList.Config.Builder().setPageSize(10)
             .setPrefetchDistance(5)
             .setEnablePlaceholders(true)
-            .setInitialLoadSizeHint(20)
+            .setInitialLoadSizeHint(30)
             .setMaxSize(100)
             .build()
         return LivePagedListBuilder(mFactory, pagedListConfig)
@@ -40,7 +41,8 @@ class ByPositionRepository {
 
         override fun onZeroItemsLoaded() {
             super.onZeroItemsLoaded()
-            printThreadInfo("onZeroItemsLoaded()")
+            printThreadInfo("onItemAtFrontLoaded()")
         }
     }
+
 }

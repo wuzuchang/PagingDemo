@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wzc.jetpackdemo.paging2.bean
+package com.wzc.pagingdemo.paging2.bean
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

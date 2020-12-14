@@ -1,11 +1,11 @@
-package com.wzc.jetpackdemo
+package com.wzc.pagingdemo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.wzc.jetpackdemo.paging2.Paging2Activity
-import com.wzc.jetpackdemo.paging3.Paging3Activity
+import com.wzc.pagingdemo.paging2.Paging2Activity
+import com.wzc.pagingdemo.paging3.Paging3Activity
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,12 +1,12 @@
-package com.wzc.jetpackdemo.paging2.adapter
+package com.wzc.pagingdemo.paging2.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.wzc.jetpackdemo.R
-import com.wzc.jetpackdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.R
+import com.wzc.pagingdemo.paging2.bean.Cheese
 
 class BaseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val mItemContentTv: TextView = itemView.findViewById(R.id.item_content)

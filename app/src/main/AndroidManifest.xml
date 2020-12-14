@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wzc.jetpackdemo">
+    package="com.wzc.pagingdemo">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JetPackDemo">
-        <activity android:name=".paging2.DbAndNetworkActivity"></activity>
-        <activity android:name=".paging2.PositionActivity" />
-        <activity android:name=".paging2.PageKeyActivity" />
-        <activity android:name=".paging2.ItemKeyActivity" />
-        <activity android:name=".paging3.Paging3Activity" />
-        <activity android:name=".paging2.Paging2Activity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.wzc.pagingdemo.paging2.DbAndNetworkActivity"/>
+        <activity android:name="com.wzc.pagingdemo.paging2.PositionActivity" />
+        <activity android:name="com.wzc.pagingdemo.paging2.PageKeyActivity" />
+        <activity android:name="com.wzc.pagingdemo.paging2.ItemKeyActivity" />
+        <activity android:name="com.wzc.pagingdemo.paging3.Paging3Activity" />
+        <activity android:name="com.wzc.pagingdemo.paging2.Paging2Activity" />
+        <activity android:name="com.wzc.pagingdemo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

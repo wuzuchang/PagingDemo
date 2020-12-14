@@ -7,7 +7,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.wzc.jetpackdemo"
+        applicationId "com.wzc.pagingdemo"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1

@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.wzc.jetpackdemo.paging2.db
+package com.wzc.pagingdemo.paging2.db
 
 import androidx.paging.PagingSource
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.wzc.jetpackdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.bean.Cheese
 
 /**
  * Database Access Object for the Cheese database.

@@ -1,13 +1,13 @@
-package com.wzc.jetpackdemo.paging2
+package com.wzc.pagingdemo.paging2
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.wzc.jetpackdemo.R
-import com.wzc.jetpackdemo.paging2.adapter.Paging2Adapter
-import com.wzc.jetpackdemo.paging2.repository.item.ByItemRepository
+import com.wzc.pagingdemo.R
+import com.wzc.pagingdemo.paging2.adapter.Paging2Adapter
+import com.wzc.pagingdemo.paging2.repository.item.ByItemRepository
 
 
 class ItemKeyActivity : AppCompatActivity() {

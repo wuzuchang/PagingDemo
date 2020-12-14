@@ -1,11 +1,11 @@
-package com.wzc.jetpackdemo.paging2.repository.page
+package com.wzc.pagingdemo.paging2.repository.page
 
 import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
-import com.wzc.jetpackdemo.paging2.bean.Cheese
-import com.wzc.jetpackdemo.paging2.printThreadInfo
+import com.wzc.pagingdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.printThreadInfo
 
 class ByPageRepository {
     private val mFactory = object : DataSource.Factory<Int, Cheese>() {

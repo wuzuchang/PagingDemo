@@ -1,7 +1,7 @@
-package com.wzc.jetpackdemo.paging2
+package com.wzc.pagingdemo.paging2
 
 import android.util.Log
-import com.wzc.jetpackdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.bean.Cheese
 import java.util.concurrent.Executors
 
 private val IO_EXECUTOR = Executors.newSingleThreadExecutor()

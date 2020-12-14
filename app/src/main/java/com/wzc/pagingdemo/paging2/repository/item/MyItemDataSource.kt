@@ -1,9 +1,9 @@
-package com.wzc.jetpackdemo.paging2.repository.item
+package com.wzc.pagingdemo.paging2.repository.item
 
 import android.util.Log
 import androidx.paging.ItemKeyedDataSource
-import com.wzc.jetpackdemo.paging2.bean.Cheese
-import com.wzc.jetpackdemo.paging2.loadData
+import com.wzc.pagingdemo.paging2.bean.Cheese
+import com.wzc.pagingdemo.paging2.loadData
 
 class MyItemDataSource : ItemKeyedDataSource<Int, Cheese>() {
     override fun getKey(item: Cheese): Int {

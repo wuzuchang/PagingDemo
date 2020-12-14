@@ -1,8 +1,8 @@
-package com.wzc.jetpackdemo.paging2
+package com.wzc.pagingdemo.paging2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.wzc.jetpackdemo.R
+import com.wzc.pagingdemo.R
 
 class DbAndNetworkActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
